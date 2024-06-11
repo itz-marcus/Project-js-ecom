@@ -23,10 +23,10 @@ img[alt='bgimage']{
 }
 .nav-item a{
     color: rgb(129, 91, 56);
-    transition: 0.5s;
-    padding: 0 60px ;
+    padding: 20px 100px ;
 }
 .nav-item a:hover{
+    transition: 0.5s;
     color:rgb(68, 51, 35);
     text-shadow: 2px 2px 0px rgb(129, 91, 56) ;
 }
@@ -58,10 +58,10 @@ b{
     position: relative;
     top: 15px;
 }
-.col-sm-6 .col-md-2{
+#t-border{
 border: 4px 4px solid rgb(129, 91, 56);
 }
 #logo{
-height: 3.5vw;
-width: 25vh;
+object-fit: contain;
+height: 4.5vw;
 }
