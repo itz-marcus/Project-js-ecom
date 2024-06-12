@@ -67,6 +67,15 @@ b{
  border:solid 3px rgb(129, 91, 56);
  margin: -3px;
  margin-left: 0px;
+}
+#t-border1{
+ border:solid 3px rgb(129, 91, 56);
+ margin: -3px;;
+}
+#t-border2{
+ border:solid 3px rgb(129, 91, 56);
+ margin: -3px;
+ margin-left: 0px;
  
 }
 #logo{
