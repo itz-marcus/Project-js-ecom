@@ -21,9 +21,10 @@ img[alt='bgimage']{
     margin-right:auto;
     object-fit: contain;
 }
-.nav-item a{
+#head-pad a{
     color: rgb(129, 91, 56);
-    padding: 20px 100px ;
+    padding: 29px 5vw ;
+    font-size: 1vw ;
 }
 .nav-item a:hover{
     transition: 0.5s;
@@ -58,10 +59,67 @@ b{
     position: relative;
     top: 15px;
 }
-#t-border{
-border: 4px 4px solid rgb(129, 91, 56);
+#t-border1{
+ border:solid 3px rgb(129, 91, 56);
+ margin: -3px;;
+}
+#t-border2{
+ border:solid 3px rgb(129, 91, 56);
+ margin: -3px;
+ margin-left: 0px;
+ 
 }
 #logo{
 object-fit: contain;
 height: 4.5vw;
+padding: 3px;
+}
+#nav-t{
+ width: 97.15vw;   
+}
+#cart-logo{
+object-fit: contain;
+height: 3vw; 
+}
+#nav-logos{
+    padding: 0px
+}
+/* home */
+
+#ad-1{
+    left: 46vw;
+    top: 4vw;
+    position: absolute;
+    object-fit: contain;
+    height: 23vw;  
+    transition: 1s;
+}
+#ad-1:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#ad-text{
+    position: absolute;
+    top: 13vw;
+    left: 1.5vw;
+    width: 30vw;
+}
+#ad-title{
+    color: wheat;
+    font-size: 1.6vw;
+    text-shadow: 4px 4px rgb(68, 51, 35);
+}
+#BN-button{
+    
+    height: 2.5vw;
+    font-size: 1vw;
+    background-color: wheat;
+    color: rgb(68, 51, 35) ;
+    transition: 0.3s;
+}
+#BN-button:hover{
+    box-shadow: 0.3vw 0.3vw rgb(68, 51, 35) ;
+}
+#price{
+    font-size: 2vw; 
 }
