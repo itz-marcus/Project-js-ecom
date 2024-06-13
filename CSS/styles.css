@@ -221,4 +221,22 @@ i:hover{
 }
 
 /* about */
+#about-sct{
+    left: 0px;
+}
+#about-img{
+    object-fit: contain;
+    width:49vw;
+}
+#about-info{
+    padding-top: 2vw;
+    padding-left: 4vw;
+}
+#about-text{
+font-size: 1vw;
+}
+h1{
+    font-size: 3vw;
+    text-shadow: 0.2vw 0.2vw rgb(68, 51, 35);
+}
 
