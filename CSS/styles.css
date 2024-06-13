@@ -45,7 +45,7 @@ img[alt='bgimage']{
     margin-left: 1.5%;
     margin-right: 1.5%;
     width: auto;
-    height:129vh;
+    height:125vh;
 }
 #border-m{
     border: solid 3px rgb(129, 91, 56);
@@ -54,6 +54,23 @@ img[alt='bgimage']{
     margin-right: 1.5%;
     width: auto;
     height:85vh;
+}
+#foot-m{
+    position: absolute;
+    border:solid 3px rgb(129, 91, 56);
+    margin: 0.4%;
+    width: auto;
+    height: 8vh;
+    margin-top: -3px;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    text-align: center;
+    line-height: 300%;
+    font-size: 0.8vw;
+    line-height: 1.1;
+    color: rgb(129, 91, 56);
+    width: 97vw;
 }
 #foot{
     position: absolute;
@@ -70,7 +87,7 @@ img[alt='bgimage']{
     font-size: 0.8vw;
     line-height: 1.1;
     color: rgb(129, 91, 56);
-    width: 97vw;
+    width: 95.95vw;
 }
 b{
     position: relative;
@@ -168,7 +185,7 @@ height: 3vw;
 #newsletter{
     background-color: rgb(68, 51, 35) ;
     width: 70vw;
-    height: 47vh;
+    height: 45.2vh;
     padding-top: 4vh;
     padding-left: 4vw ;
 }
@@ -228,6 +245,7 @@ i:hover{
     object-fit: contain;
     height:33vw;
     transition: 0.3s;
+    margin-left: 3vw;
 }
 #about-img:hover{
     height: 34vw;
