@@ -6,7 +6,7 @@ body{
     font-style:normal;
     font-weight: bolder;
     color: rgb(129, 91, 56);
-    height: 70vw;
+    height: 65vw;
 }
 #selected{
     text-decoration:underline;
@@ -38,7 +38,7 @@ img[alt='bgimage']{
     margin-left: 1.5%;
     margin-right: 1.5%;
     width: auto;
-    height:132vh;
+    height:125vh;
 }
 #foot{
     position: absolute;
@@ -56,13 +56,11 @@ img[alt='bgimage']{
     line-height: 1.1;
     color: rgb(129, 91, 56);
     width: 95.95vw;
-    
 }
 
 b{
     position: relative;
-    top: 15px;
-    
+    top: 15px;  
 }
 #t-border1{
  border:solid 3px rgb(129, 91, 56);
@@ -89,14 +87,27 @@ height: 4.5vw;
 padding: 3px;
 }
 #nav-t{
- width: 97.15vw;   
+ width: 96.1vw;   
 }
 #cart-logo{
 object-fit: contain;
 height: 3vw; 
 }
+#cart-profile{
+object-fit: contain;
+height: 3vw; 
+}
 #nav-logos{
     padding: 0px
+}
+#cart-amount{
+    padding-top: 1vw;
+    color: rgb(129, 91, 56);
+}
+#cart-amount:hover{
+    transition: 0.5s;
+    color:rgb(68, 51, 35);
+    text-shadow: 2px 2px 0px wheat ;
 }
 /* home */
 
@@ -125,25 +136,70 @@ height: 3vw;
 }
 #BN-button{
     
-    height: 2.5vw;
+    height: 2vw;
     font-size: 1vw;
     background-color: wheat;
-    color: rgb(68, 51, 35) ;
+    color: rgb(129, 91, 56) ;
     transition: 0.3s;
 }
 #BN-button:hover{
-    box-shadow: 0.3vw 0.3vw rgb(68, 51, 35) ;
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
 }
 #price{
     font-size: 2vw; 
 }
 #newsletter{
     background-color: rgb(68, 51, 35) ;
+    width: 70vw;
+    height: 45.2vh;
+    padding-top: 4vh;
+    padding-left: 4vw ;
 
 }
-#newletter-body{
-    position: absolute;
-    left: 27px;
-    width: 96.95vw;
+#newsletter-b{
+display: flex;
+flex-direction: row;
 
+}
+#NL-heading{
+    width: 20vw;
+    color: wheat;
+    text-shadow: 3px 3px rgb(129, 91, 56) ;
+}
+#NL-info{
+    width: 30vw;
+    color: rgb(198, 137, 81) ;
+}
+#NL-input{
+    height: 2vw;
+    width: 15vw;
+    color: wheat;
+    background-color: rgb(129, 91, 56) ;
+}
+#NL-input::placeholder {
+    width: 15vw;
+    color: rgb(198, 137, 81);
+}
+#sub-but{
+    height: 2vw;
+    width: 8vw;
+    background-color: wheat ;
+    color: rgb(129, 91, 56) ;
+    transition: 0.3s;
+}
+#sub-but:hover{
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56);
+}
+i{
+    font-size: 64px;
+    transition: 0.3s;
+}
+i:hover{
+    color: wheat;
+    cursor: pointer;
+}
+#icons{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
 }
