@@ -107,7 +107,7 @@ height: 3vw;
 #cart-amount:hover{
     transition: 0.5s;
     color:rgb(68, 51, 35);
-    text-shadow: 2px 2px 0px wheat ;
+    text-shadow: 2px 2px 0px wheat;
 }
 /* home */
 
