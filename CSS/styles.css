@@ -70,7 +70,7 @@ img[alt='bgimage']{
     font-size: 0.8vw;
     line-height: 1.1;
     color: rgb(129, 91, 56);
-    width: 95.95vw;
+    width: 97vw;
 }
 b{
     position: relative;
@@ -226,7 +226,11 @@ i:hover{
 }
 #about-img{
     object-fit: contain;
-    width:49vw;
+    height:33vw;
+    transition: 0.3s;
+}
+#about-img:hover{
+    height: 34vw;
 }
 #about-info{
     padding-top: 2vw;
