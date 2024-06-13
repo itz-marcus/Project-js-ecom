@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+/* `````````````````````````````````````````````````````general````````````````````````````````````````````````````` */
 #body-h{
     background-color: wheat;
     font-family: "Press Start 2P", system-ui;
@@ -7,6 +9,14 @@
     font-weight: bolder;
     color: rgb(129, 91, 56);
     height: 66vw;
+}
+#body-store{
+    background-color: wheat;
+    font-family: "Press Start 2P", system-ui;
+    font-style:normal;
+    font-weight: bolder;
+    color: rgb(129, 91, 56);
+    margin-bottom: 5.5vw;
 }
 #body-m{
     background-color: wheat;
@@ -17,17 +27,6 @@
 }
 #selected{
     text-decoration:underline;
-}
-img[alt='bgimage']{
-    height: 85vh;
-    background-repeat: no-repeat;
-    opacity: 0.5; 
-    position: absolute;
-    z-index: -1;
-    left: 20%;
-    margin-left: auto;
-    margin-right:auto;
-    object-fit: contain;
 }
 #head-pad a{
     color: rgb(129, 91, 56);
@@ -45,7 +44,16 @@ img[alt='bgimage']{
     margin-left: 1.5%;
     margin-right: 1.5%;
     width: auto;
-    height:125vh;
+    height:auto;
+}
+#border-store{
+    border: solid 3px rgb(129, 91, 56);
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: auto;
+    height: auto;
+    
 }
 #border-m{
     border: solid 3px rgb(129, 91, 56);
@@ -102,16 +110,6 @@ b{
  margin: -3px;
  margin-left: 0px;
 }
-#t-border1{
- border:solid 3px rgb(129, 91, 56);
- margin: -3px;;
-}
-#t-border2{
- border:solid 3px rgb(129, 91, 56);
- margin: -3px;
- margin-left: 0px;
- 
-}
 #logo{
 object-fit: contain;
 height: 4.5vw;
@@ -143,7 +141,7 @@ height: 3vw;
     color:rgb(68, 51, 35);
     text-shadow: 2px 2px 0px wheat;
 }
-/* home */
+/* `````````````````````````````````````````````````````home````````````````````````````````````````````````````` */
 
 #ad-1{
     left: 46vw;
@@ -237,7 +235,7 @@ i:hover{
     padding-right: 2vw;
 }
 
-/* about */
+/* `````````````````````````````````````````````````````about````````````````````````````````````````````````````` */
 #about-sct{
     left: 0px;
 }
@@ -261,4 +259,82 @@ h1{
     font-size: 3vw;
     text-shadow: 0.2vw 0.2vw rgb(68, 51, 35);
 }
+/* `````````````````````````````````````````````````````store````````````````````````````````````````````````````` */
 
+#search-input{
+    border:solid 3px rgb(143, 110, 78);
+    margin: 1vw;
+    height: 3vw;
+    width: 93.6vw;
+    color: rgb(129, 91, 56);
+    background-color: wheat;
+}
+#search-input::placeholder {
+    width: 15vw;
+    color: rgb(147, 111, 78);
+}
+#storeHeading{
+    padding-top: 2vw;
+    padding-left: 4.6vw;
+}
+#products-imgs{
+    object-fit: contain;
+    height: 25vw;
+}
+#for-sale-itms{
+    margin: 3vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 5vw;
+    place-items: center;
+
+}
+#description{
+    font-size: 1.5vw;
+    color: rgb(129, 91, 56)
+}
+.card-title{
+    color: rgb(129, 91, 56);
+}
+#productCard{
+    border:solid 3px rgb(143, 110, 78);
+    height: auto;
+    transition: 0.3s;
+    height: 37vw;
+}
+#productCard:hover{
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
+}
+#thumbnail{
+    object-fit: contain;
+    height: 25vw;
+    background-color: rgb(206, 185, 148);
+}
+.card-body{
+    border-top:solid 3px rgb(143, 110, 78);
+    background-color: wheat;
+}
+#addToCart{
+    border:solid 3px rgb(143, 110, 78);
+    height: 2.5vw;
+    width: 9vw;
+    font-size: 1vw;
+    background-color: wheat;
+    color: rgb(129, 91, 56) ;
+    transition: 0.3s;
+}
+#addToCart:hover{
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
+}
+#view{
+    border:solid 3px rgb(143, 110, 78);
+    height: 2.5vw;
+    width: 9vw;
+    font-size: 1vw;
+    background-color: wheat;
+    color: rgb(129, 91, 56) ;
+    transition: 0.3s;
+}
+#view:hover{
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
+}
