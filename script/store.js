@@ -21,8 +21,10 @@ let item5 = new CreateItem(5,'Landyachtz Drop Hammer white Pinecone','Longboard'
 let item6 = new CreateItem(6,'Landyachtz Tony Danza Spectrum','Longboard','https://baboonboards.com/wp-content/uploads/Landyachtz-Tony-Danza-Spectrum.jpg','Features: Width- 10 Inches Length- 36.6 Inches Wheelbase- 27.2 Inches Grizzly Gen 6 155mm Reds Bones Bearings Fatty Hawgs wheels',1, 4800)
 
 let item7 = new CreateItem(7,'Tabla Polar Oski World Domination','Skateboard','https://itz-marcus.github.io/Project-imagesV2/tabla-polar-oski-world-domination-875.png','Features: Width- 10 Inches Length- 36.6 Inches Wheelbase- 27.2 Inches Grizzly Gen 6 155mm Reds Bones Bearings Fatty Hawgs wheels',1, 1300)
+
+let item8 = new CreateItem(8,'duplicate for deletion code purposes :)','Skateboard','https://itz-marcus.github.io/Project-imagesV2/tabla-polar-oski-world-domination-875.png','Features: Width- 10 Inches Length- 36.6 Inches Wheelbase- 27.2 Inches Grizzly Gen 6 155mm Reds Bones Bearings Fatty Hawgs wheels',1, 1300)
  
-let items = [item1,item2,item3,item4,item5,item6,item7]
+let items = [item1,item2,item3,item4,item5,item6,item7,item8]
 
 let main = document.querySelector('#for-sale-itms')
 localStorage.setItem('items',JSON.stringify(items))
@@ -53,4 +55,16 @@ purchasedButs.forEach(button => {
     button.addEventListener('click',(event) =>{
         addToCart(event.target.value);
     })
+});
+
+let searchbar = document.querySelector('#search-input');
+searchbar.addEventListener('keyup', (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase();
+    if (searchTerm.length < 1) {
+        displayProducts(allList);
+    }
+    let filteredProducts = allList.filter(product =>
+        product.name.toLowerCase().includes(searchTerm));
+        console.log(filteredProducts);
+    displayProducts(filteredProducts);
 });

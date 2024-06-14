@@ -282,7 +282,7 @@ h1{
     font-size: 1vw;
 }
 #productCard{
-    border:solid 3px rgb(148, 133, 119);
+    border:solid 3px rgb(129, 91, 56);
     height: auto;
     transition: 0.3s;
     height: auto;
@@ -348,7 +348,6 @@ h1{
     padding-left: 4vw;
 }
 #titles{
-    
     font-size: 1vw;
 }
 #input-t1{
@@ -410,4 +409,15 @@ th{
 }
 #clear-item:hover{
     box-shadow: 0.3vw 0.3vw rgb(68, 51, 35); ;
+}
+/* `````````````````````````````````````````````````````Admin````````````````````````````````````````````````````` */
+.text-brown{
+    font-size: 0.5vw;
+}
+table{
+    margin: 1vw;
+}
+#admin-pic{
+    object-fit: contain;
+    width: 5vw;
 }
