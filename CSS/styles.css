@@ -164,7 +164,7 @@ height: 3vw;
     text-shadow: 4px 4px rgb(68, 51, 35);
 }
 #BN-button{
-    
+    border:solid 0.2vw rgb(143, 110, 78);
     height: 2vw;
     font-size: 1vw;
     background-color: wheat;
@@ -180,7 +180,7 @@ height: 3vw;
 #newsletter{
     background-color: rgb(68, 51, 35) ;
     width: 70vw;
-    height: 45.2vh;
+    height: auto;
     padding-top: 4vh;
     padding-left: 4vw ;
 }
@@ -200,9 +200,10 @@ flex-direction: row;
 }
 #NL-input{
     height: 2vw;
-    width: 15vw;
+    width: 20vw;
     color: wheat;
     background-color: rgb(129, 91, 56) ;
+    font-size: 0.8vw;
 }
 #NL-input::placeholder {
     width: 15vw;
@@ -210,10 +211,11 @@ flex-direction: row;
 }
 #sub-but{
     height: 2vw;
-    width: 8vw;
+    width: 9vw;
     background-color: wheat ;
     color: rgb(129, 91, 56) ;
     transition: 0.3s;
+    border:solid 0.2vw rgb(143, 110, 78);
 }
 #sub-but:hover{
     box-shadow: 0.3vw 0.3vw rgb(129, 91, 56);
@@ -276,15 +278,14 @@ h1{
 }
 #products-imgs{
     object-fit: contain;
-    height: 25vw;
+    height: auto;
 }
 #for-sale-itms{
     margin: 3vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 5vw;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
-
+    gap: 5vw;
 }
 #description{
     font-size: 1.5vw;
@@ -292,12 +293,14 @@ h1{
 }
 .card-title{
     color: rgb(129, 91, 56);
+    font-size: 1vw;
 }
 #productCard{
-    border:solid 3px rgb(143, 110, 78);
+    border:solid 3px rgb(148, 133, 119);
     height: auto;
     transition: 0.3s;
-    height: 37vw;
+    height: auto;
+    width: 20vw;
 }
 #productCard:hover{
     box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
@@ -313,8 +316,8 @@ h1{
 }
 #addToCart{
     border:solid 3px rgb(143, 110, 78);
-    height: 2.5vw;
-    width: 9vw;
+    height: 3vw;
+    width: 8vw;
     font-size: 1vw;
     background-color: wheat;
     color: rgb(129, 91, 56) ;
@@ -325,8 +328,8 @@ h1{
 }
 #view{
     border:solid 3px rgb(143, 110, 78);
-    height: 2.5vw;
-    width: 9vw;
+    height: 3vw;
+    width: 8vw;
     font-size: 1vw;
     background-color: wheat;
     color: rgb(129, 91, 56) ;
