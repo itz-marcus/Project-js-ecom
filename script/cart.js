@@ -1,16 +1,16 @@
 let display = document.querySelector('tbody')
-let purchasedStuff = JSON.parse(localStorage.getItem('purchasedStuffs'))
+let purchasedStuff = JSON.parse(localStorage.getItem('purchasedItems'))
 
 
 purchasedStuff.forEach(purchasedThings =>{
     display.innerHTML += `
         <tr>
-        <td><img src="${purchasedThings.image}"></td>
+        <td><img id="p-item" src="${purchasedThings.image}"></td>
         <td>${purchasedThings.name}</td>
         <td>${purchasedThings.description}</td>
         <td>${purchasedThings.quantity}</td>
-        <td>${purchasedThings.price}</td>
-        <td></td>
+        <td>R${purchasedThings.price}</td>
+        <td><button id="clear-item">X</button></td>
         </tr> 
                       `                  
 })

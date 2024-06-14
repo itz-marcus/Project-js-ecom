@@ -235,9 +235,7 @@ i:hover{
 }
 
 /* `````````````````````````````````````````````````````about````````````````````````````````````````````````````` */
-#about-sct{
-    left: 0px;
-}
+
 #about-img{
     object-fit: contain;
     height:33vw;
@@ -308,7 +306,7 @@ h1{
 #thumbnail{
     object-fit: contain;
     height: 25vw;
-    background-color: rgb(206, 185, 148);
+    background-color: rgb(250, 250, 250);
 }
 .card-body{
     border-top:solid 3px rgb(143, 110, 78);
@@ -354,4 +352,74 @@ td{
 th{
     height: 2vw;
     padding: 0.5vw;
+}
+#p-item{
+    object-fit: contain;
+    width: 7vw;
+}
+#clear-item{
+    width: 3vw;
+    height: 3vw;
+    background-color:rgb(129, 91, 56) ;
+    border:solid 0px rgb(129, 91, 56);
+    transition: 0.3s;
+}
+#clear-item:hover{
+    box-shadow: 0.3vw 0.3vw rgb(68, 51, 35); ;
+}
+/* `````````````````````````````````````````````````````Cart````````````````````````````````````````````````````` */
+
+#contact-content{
+    display: flex;
+}
+#contact-info{
+    padding-top: 2vw;
+    padding-left: 4vw;
+}
+#content-img{
+    object-fit: contain;
+    height: 35vw;
+    transition: 0.3s;
+    margin-left: 3vw;
+    margin-top: 0.5vw;
+}
+#content-img:hover{
+    height: 35.5vw;
+}
+#content-info{
+    padding-top: 3vw;
+    padding-left: 4vw;
+}
+#titles{
+    
+    font-size: 1vw;
+}
+#input-t1{
+    border:solid 3px rgb(143, 110, 78);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    height: 3vw;
+    width: 40vw;
+    color: rgb(129, 91, 56);
+    background-color: wheat;
+}
+#input-t2{
+    border:solid 3px rgb(143, 110, 78);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    height: 7vw;
+    width: 40vw;
+    color: rgb(129, 91, 56);
+    background-color: wheat;
+}
+#submit-but{
+    height: 2vw;
+    width: 9vw;
+    background-color: wheat ;
+    color: rgb(129, 91, 56) ;
+    transition: 0.3s;
+    border:solid 0.2vw rgb(143, 110, 78);
+}
+#submit-but:hover{
+    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56);
 }
