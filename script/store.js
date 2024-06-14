@@ -10,7 +10,7 @@ function CreateItem(id, name, catergory, image, description,quantity,price) {
 
 let item1 = new CreateItem(1,'Forgive Skateboards Forever','Skateboard','https://baboonboards.com/wp-content/uploads/Untitled-12.png','Features: Width- 8.5 Inches Length- 32.1 Inches Wheelbase- 14.5 Inches Ghost Trucks 160mm Baboon Balls Bearings Ghost wheels',1, 2200)
  
-let item2 = new CreateItem(2,'Landyachtz Dinghy','Cruise-board','https://baboonboards.com/wp-content/uploads/Landyachtz-dinghy-skeleton-1.jpg','Features: Width- 7.8 Inches Length- 28.5 Inches Wheelbase- 14.6 Inches Polar Bear trucks 105mm Space Balls Bearings Fatty Hawgs wheels',1, 4100)
+let item2 = new CreateItem(2,'Landyachtz Dinghy complete','Cruise-board','https://baboonboards.com/wp-content/uploads/Landyachtz-dinghy-skeleton-1.jpg','Features: Width- 7.8 Inches Length- 28.5 Inches Wheelbase- 14.6 Inches Polar Bear trucks 105mm Space Balls Bearings Fatty Hawgs wheels',1, 4100)
  
 let item3 = new CreateItem(3,'ATV Ditch Life Moto Fun','Cruise-board','https://baboonboards.com/wp-content/uploads/landyachtz-ditch-life-moto-fun-600-x-900.jpg','Features: Width- 9.75 Inches Length- 31 Inches Wheelbase- 15 Polar Bear Trucks 155mm smalls Balls Bearings Ez Hawgs wheels',1,3800)
  
@@ -26,16 +26,16 @@ let items = [item1,item2,item3,item4,item5,item6,item7]
 let main = document.querySelector('#for-sale-itms')
 localStorage.setItem('items',JSON.stringify(items))
 
-let purchasedItems = []
+let purchasedStuffs = []
 items.forEach(item =>{
      main.innerHTML += `
-                <div id="productCard" class="card" style="width: 25rem;">
+                <div id="productCard" class="card" >
                         <img id="thumbnail" src="${item.image}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">${item.name}</h5>
-                          <p id="description" class="card-text">R${item.price}</p>
-                          <a id="addToCart" class="btn btn-primary">Buy</a>
-                          <a id="view" class="btn btn-primary">View</a>
+                            <h5 class="card-title">${item.name}</h5>
+                            <p id="description" class="card-text">R${item.price}</p>
+                            <button id="addToCart">Buy</button>
+                            <button id="view">View</button>
                         </div>
                     </div>
                      `                  
@@ -43,22 +43,15 @@ items.forEach(item =>{
 
 function addToCart(id){
     let [item] = items.filter(Object=> Object.id === +id) 
-    purchasedItems.push(item)
-    localStorage.setItem('purchasedItems',JSON.stringify(purchasedItems))
+    purchasedStuffs.push(item)
+    localStorage.setItem('purchasedItems',JSON.stringify(purchasedStuffs))
 }
 
-let purchasedButs =  document.querySelectorAll('.purchase')
+let purchasedButs =  document.querySelectorAll('#addToCart')
 purchasedButs.forEach(button => {
     button.addEventListener('click',(event) =>{
         addToCart(event.target.value);
     })
 });
-{/* <div class="card" style="width: 18rem;">
-                  <img src="${item.image}" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Card title</h5>
-                        <p class="card-text">R${item.price}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-                </div> */}
+
  
