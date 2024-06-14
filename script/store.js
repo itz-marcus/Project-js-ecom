@@ -24,7 +24,11 @@ let item7 = new CreateItem(7,'Tabla Polar Oski World Domination','Skateboard','h
 
 let item8 = new CreateItem(8,'duplicate for deletion code purposes :)','Skateboard','https://itz-marcus.github.io/Project-imagesV2/tabla-polar-oski-world-domination-875.png','Features: Width- 10 Inches Length- 36.6 Inches Wheelbase- 27.2 Inches Grizzly Gen 6 155mm Reds Bones Bearings Fatty Hawgs wheels',1, 1300)
  
-let items = [item1,item2,item3,item4,item5,item6,item7,item8]
+let item9 = new CreateItem(9,'Independent Stage 11 Bar Flat Black','Skateboard truck','https://itz-marcus.github.io/Project-imagesV2/Truck.png','Axel: 85cm',1, 750)
+ 
+let item10 = new CreateItem(10,'HAWGS MINI ZOMBIES Cruise Wheels','Skateboard','https://itz-marcus.github.io/Project-imagesV2/wheel.png','Softness: 80a Width: 77mm',1, 800)
+ 
+let items = [item1,item2,item3,item4,item5,item6,item7,item8,item9,item10]
 
 let main = document.querySelector('#for-sale-itms')
 localStorage.setItem('items',JSON.stringify(items))
