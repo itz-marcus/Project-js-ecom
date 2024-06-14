@@ -43,9 +43,7 @@ items.forEach(item =>{
 })
 
 function addToCart(id){
-    console.log(id);
     let [item] = items.filter(Object=> Object.id === +id) 
-    console.log(item)
     purchasedStuffs.push(item)
     localStorage.setItem('purchasedItems',JSON.stringify(purchasedStuffs))
 }
@@ -56,5 +54,3 @@ purchasedButs.forEach(button => {
         addToCart(event.target.value);
     })
 });
-
- 

@@ -2,20 +2,18 @@ let display = document.querySelector('tbody')
 let purchasedStuff = JSON.parse(localStorage.getItem('purchasedItems'))
 
 
-purchasedStuff.forEach(purchasedThings =>{
+purchasedStuff.forEach(purchasedThing =>{
     display.innerHTML += `
         <tr>
-        <td><img id="p-item" src="${purchasedThings.image}"></td>
-        <td>${purchasedThings.name}</td>
-        <td>${purchasedThings.description}</td>
-        <td>${purchasedThings.quantity}</td>
-        <td>R${purchasedThings.price}</td>
+        <td><img id="p-item" src="${purchasedThing.image}"></td>
+        <td>${purchasedThing.name}</td>
+        <td>${purchasedThing.description}</td>
+        <td>${purchasedThing.quantity}</td>
+        <td>R${purchasedThing.price}</td>
         <td><button id="clear-item">X</button></td>
         </tr> 
                       `                  
 })
-{/* <div>
-            <img src="${purchasedThings.name}">
-            <p>R${purchasedThings.price}</p>
-        </div> */}
+
+let cartAmount = document.querySelector('#cart-amount')
 

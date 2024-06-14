@@ -35,8 +35,7 @@
 }
 .nav-item a:hover{
     transition: 0.5s;
-    color:rgb(68, 51, 35);
-    text-shadow: 2px 2px 0px rgb(129, 91, 56) ;
+    text-shadow: 0.1vw 0.1vw 0px rgb(68, 51, 35); ;
 }
 #border{
     border: solid 3px rgb(129, 91, 56);
@@ -99,24 +98,26 @@ b{
     top: 15px;  
 }
 #t-border1{
- border:solid 3px rgb(129, 91, 56);
- margin: -3px;;
-}
-#t-border2{
- border:solid 3px rgb(129, 91, 56);
- margin: -3px;
- margin-left: 0px;
+    border-bottom:solid 3px rgb(129, 91, 56);
+    margin: -3px;;
+    margin-left: 0px;
+    margin-right: -1px;
+
+ }
+ #t-border2{       
+    border-left:solid 3px rgb(129, 91, 56);
+    border-bottom:solid 3px rgb(129, 91, 56);
+     margin: -3px;
+    margin-left: 0px;
 }
 #logo{
 object-fit: contain;
 height: 4.5vw;
 padding: 3px;
 }
-#nav-t{
- width: 96.1vw;   
-}
+
 #nav-m{
- width: 97.15vw;   
+ width: auto;
 }
 #cart-logo{
 object-fit: contain;
@@ -133,10 +134,8 @@ height: 3vw;
     padding-top: 1vw;
     color: rgb(129, 91, 56);
 }
-#cart-amount:hover{
-    transition: 0.5s;
-    color:rgb(68, 51, 35);
-    text-shadow: 2px 2px 0px wheat;
+#font-resp{
+    font-size: 1vw;
 }
 /* `````````````````````````````````````````````````````home````````````````````````````````````````````````````` */
 
@@ -162,17 +161,6 @@ height: 3vw;
     color: wheat;
     font-size: 1.6vw;
     text-shadow: 4px 4px rgb(68, 51, 35);
-}
-#BN-button{
-    border:solid 0.2vw rgb(143, 110, 78);
-    height: 2vw;
-    font-size: 1vw;
-    background-color: wheat;
-    color: rgb(129, 91, 56) ;
-    transition: 0.3s;
-}
-#BN-button:hover{
-    box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
 }
 #price{
     font-size: 2vw; 
@@ -336,38 +324,7 @@ h1{
 #view:hover{
     box-shadow: 0.3vw 0.3vw rgb(129, 91, 56); ;
 }
-
-/* `````````````````````````````````````````````````````Cart````````````````````````````````````````````````````` */
-table,td,th{
-    border: solid 3px;
-    border-collapse:  collapse;
-    margin-left: 4.6vw;
-    width: 86vw;
-    margin-bottom: 1vw;
-}
-td{
-    height: 6vw;
-    padding: 0.5vw;
-}
-th{
-    height: 2vw;
-    padding: 0.5vw;
-}
-#p-item{
-    object-fit: contain;
-    width: 7vw;
-}
-#clear-item{
-    width: 3vw;
-    height: 3vw;
-    background-color:rgb(129, 91, 56) ;
-    border:solid 0px rgb(129, 91, 56);
-    transition: 0.3s;
-}
-#clear-item:hover{
-    box-shadow: 0.3vw 0.3vw rgb(68, 51, 35); ;
-}
-/* `````````````````````````````````````````````````````Cart````````````````````````````````````````````````````` */
+/* `````````````````````````````````````````````````````contact````````````````````````````````````````````````````` */
 
 #contact-content{
     display: flex;
@@ -387,7 +344,7 @@ th{
     height: 35.5vw;
 }
 #content-info{
-    padding-top: 3vw;
+    padding-top: 1.5vw;
     padding-left: 4vw;
 }
 #titles{
@@ -419,7 +376,38 @@ th{
     color: rgb(129, 91, 56) ;
     transition: 0.3s;
     border:solid 0.2vw rgb(143, 110, 78);
+    margin-bottom: 1vw;
 }
 #submit-but:hover{
     box-shadow: 0.3vw 0.3vw rgb(129, 91, 56);
+}
+/* `````````````````````````````````````````````````````Cart````````````````````````````````````````````````````` */
+table,td,th{
+    border: solid 3px;
+    border-collapse:  collapse;
+    margin-left: 4.6vw;
+    width: 86vw;
+    margin-bottom: 1vw;
+}
+td{
+    height: 6vw;
+    padding: 0.5vw;
+}
+th{
+    height: 2vw;
+    padding: 0.5vw;
+}
+#p-item{
+    object-fit: contain;
+    width: 7vw;
+}
+#clear-item{
+    width: 3vw;
+    height: 3vw;
+    background-color:rgb(129, 91, 56) ;
+    border:solid 0px rgb(129, 91, 56);
+    transition: 0.3s;
+}
+#clear-item:hover{
+    box-shadow: 0.3vw 0.3vw rgb(68, 51, 35); ;
 }
