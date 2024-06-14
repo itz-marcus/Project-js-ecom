@@ -23,6 +23,7 @@ let item6 = new CreateItem(6,'Landyachtz Tony Danza Spectrum','Longboard','https
 let item7 = new CreateItem(7,'Tabla Polar Oski World Domination','Skateboard','https://itz-marcus.github.io/Project-imagesV2/tabla-polar-oski-world-domination-875.png','Features: Width- 10 Inches Length- 36.6 Inches Wheelbase- 27.2 Inches Grizzly Gen 6 155mm Reds Bones Bearings Fatty Hawgs wheels',1, 1300)
  
 let items = [item1,item2,item3,item4,item5,item6,item7]
+
 let main = document.querySelector('#for-sale-itms')
 localStorage.setItem('items',JSON.stringify(items))
 
@@ -34,7 +35,7 @@ items.forEach(item =>{
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
                             <p id="description" class="card-text">R${item.price}</p>
-                            <button id="addToCart">Buy</button>
+                            <button id="addToCart" value=${item.id} >Buy</button>
                             <button id="view">View</button>
                         </div>
                     </div>
@@ -53,5 +54,3 @@ purchasedButs.forEach(button => {
         addToCart(event.target.value);
     })
 });
-
- 
